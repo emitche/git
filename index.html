@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Git and Version Control: Demystified</title>
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/simple.css" id="theme">
+		<link rel="stylesheet" href="css/presentation.css">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Git &<br> Version Control:<br>
+					Demystified</h1>
+					
+					<h3>Elizabeth Mitchell</h3>
+				</section>
+
+				<section>
+					<h2>What is version control?</h2>
+				</section>
+				
+				<section>
+					<p>
+						Imagine you are designing a logo. You start out with some image files and the main image file you are designing.</p>
+						
+					<img src="mopsies/mopsie1.png" />
+					<code>mopsie1.png</code>
+					
+					<p>					
+						Let's say you reach a point in your design where you want to try out something new without impacting the old file. So you save a copy.
+					</p>
+						<img src="awesome-logo.png" />
+						<pre><code>awesome-logo.xcf</code></pre>
+						
+						<img src="awesome-logo-2.png" />
+						<code>awesome-logo-2.xcf</code>
+						
+				</section>
+				
+				<section>
+						This can quickly become a bit of a tangle. When you are working on a project (building a site, an application, a logo, a book), it's messy and hard to keep track when you save many files or many folders of the same project.
+						
+						Version control monitors the changes you make in a project and keeps record of your changes. That way, instead of saving multiple file copies, you instead are saving your changes, making record of why you made those changes.
+				</section>
+				
+				<section>
+						<h2>The Trusty Command Line</h2>
+						
+						<p>The command line is a <em>friendly?</em> and useful tool for a developer.</p>
+						
+						<p>But for many it's <em>a bit?</em> scary. There are some useful commands at the end of this guide to navigate the command line.</p>
+
+						Git Shell/ Git Bash/ Command Line		
+				</section>
+
+				<section>
+						<h2>Useful Commands</h2>
+						
+						<pre><code>cd</code></pre> <p><strong>Change directory</strong> - useful for moving from folder to folder.</p>
+						
+						<pre><code>ls</code></pre> <p><strong>List</strong> - this command lets you see the contents of a folder.</p>
+						
+						<pre><code>mkdir</code></pre> <p>This <strong>makes a directory</strong> (new folder).</p>		
+				</section>
+				
+				<section>
+						<h2>How to leap across your files</h2>
+						
+						<section>
+						<pre><code>
+						user
+						ls
+						</code></pre>
+						<p>Find out where you are.</p>
+						</section>
+						
+						<section>
+						<pre><code>
+						user
+						cd Documents
+						</code></pre>
+						<p>Move to your Documents folder.</p>
+						
+						<pre><code>
+						user/Documents
+						cd Folder/SubFolder
+						</code></pre>
+						<p>Jump multiple folders at once.</p>
+						</section>
+					
+						<section>
+						<pre><code>
+						user/Documents/Folder/SubFolder
+						cd ..
+						</code></pre>
+						<p>Takes you up one level up/ one level out.</p>
+						
+						<pre><code>
+						user/Folder1/SubFolder1
+						</code></pre>
+						</section>
+						
+						<section>
+						<pre><code>cd ~</code></pre>
+						<p>Take me back to root (likely your username's main folder).</p>
+						</section>
+						
+						You are here
+						Your command
+						Now you are here
+						
+				</section>
+				
+				
+				<section>
+						<h2>What Do I Need to Get Started?</h2>
+						
+						<a href="http://www.git-scm.com/downloads">Download Git from the Git website.</a> Choose your appropiate installation for your computer.
+						
+						You'll be 
+						
+
+				</section>
+				
+				<section>
+						<h2>Tool Alternatives: GUIs</h2>
+						
+						When you install Git, it comes with its own GUI. But if you prefer to try out others, here are some below.
+						<p>If you aren't comfortable with the command line, there are great tools to help you get started using Git. Here are a few GUIs (graphical user interfaces) to get you started:</p>
+						
+						<ul>
+							<li><a href="http://www.git-scm.com/downloads/guis">List of Git recommended clients</a></li>
+							<li>Popular: GitHub: <a href="https://windows.github.com/">Windows</a>, <a href="https://mac.github.com/">Mac</a></li>
+							<li>Popular: <a href="http://www.sourcetreeapp.com/">Atlassian SourceTree</a></li>
+						</ul>
+						
+						<p>Using these tools will help you understand how Git works and its main commands. Learning how Git works will allow you to apply it to the command line in the future.</p>
+						
+						<p>(Same language, different tools.)</p>
+						
+						
+						<aside class="notes">
+							<p>This is actually how I first started using Git. I went to a talk about Git and sat there quite confused. A year later, using the GitHub app helped me better understand how version control works. I eventually started using the command line for better control</p>
+							
+							<p>Though this guide will not discuss how to use these tool, understanding the Git commands and how version control works should be helpful in getting you up to speed with the apps if you choose to use them.</p>
+							
+						</aside>		
+
+				</section>
+				
+				<section>
+						<h2>What Do I Need to Get Started?</h2>
+						
+
+				</section>
+				
+				<section>
+				
+					<h2></h2>
+					http://www.git-scm.com/downloads
+				
+				</section>
+				
+				
+				<section>
+						<h1>Git: Useful Features</h1>
+				</section>
+				
+				<section>
+						<h1>Init</h1>
+						<code>git init</code>
+		
+						<p>Initializes a new Git project</p>
+						
+						<p>This is you saying, "hey Git, I'd like you to track my files in this folder."</p>
+						
+						<aside>(or helps do some helpful clearing out on an old one).</aside>
+				</section>
+				
+				<section>
+						<h1>Log</h1>
+						<code>git log</code>
+		
+						<p>Use up down to navigate.</p>
+						<p>Press <code>q</code> to exit.</p>
+				</section>
+				
+				<section>
+						<h1>Branches</h1>
+						<code>git branch</code>
+					
+						<pre><code data-trim contenteditable>
+						git log
+						</code></pre>
+						
+						<aside>Imagine you are working on a project. Maybe you are building a site or application. Maybe you are designing a new logo.
+				</section>
+				
+				<section>
+					<p>Making a new change? Thinking of trying a new approach?</p>
+					<p>Make a new branch first. <br>Think of it as a savepoint before you head down a new path.</p>
+					<img src="images/tombraider/trlastrevscreen046.jpg" />
+				</section>
+				
+				<section>
+						<h1>Branches</h1>
+						<code>git branch</code>
+						<p>The great things about version control is being able to </p>
+						
+						<p>Imagine you are working on a project. You reach a point where you need to work on a new feature or idea, but you want don't want to impact where you currently are at with your files.</p>
+						
+						<p>A branch takes a snapshot of your files at a specific point and splits those new files off. You are free to morph those files as you like.</p>
+						
+						<section>
+							<pre><code data-trim>
+							git branch awesome-new-feature
+							</code></pre>
+							
+							<pre><code data-trim>
+							git checkout -b newbranchofjoy
+							</code></pre>
+						</section>
+				</section>
+				
+				<section>
+						<h1>Stash</h1>
+						<code>git stash</code>
+						
+						Commits are changes that get recorded into your code base. What if you don't want to make a commit, but just want to save where you are? 
+						
+						Like a checkpoint, <code>git stash</code> is useful.
+						
+						<pre><code data-trim contenteditable>
+						git log
+						</code></pre>
+				</section>
+				
+				<section>
+						<h1>Command Line Tools</h1>
+						<code>git stash</code>
+						
+						cd
+						mkdir
+						
+						
+						Commits are changes that get recorded into your code base. What if you don't want to make a commit, but just want to save where you are? 
+						
+						Like a checkpoint, <code>git stash</code> is useful.
+						
+						<pre><code data-trim contenteditable>
+						git log
+						</code></pre>
+				</section>
+				
+				<section>
+				
+				<h1>Resources</h1>
+				<a href="http://www.git-scm.com/">Git</a>
+				
+				<a href="https://github.com/">GitHub</a>
+				
+				<a href="">Bitbucket</a>
+				
+				</section>
+				
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
