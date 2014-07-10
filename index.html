@@ -12,7 +12,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/simple.css" id="theme">
+		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
 		<link rel="stylesheet" href="css/presentation.css">
 
 		<!-- For syntax highlighting -->
@@ -48,7 +48,7 @@
 					<h3>Elizabeth Mitchell</h3>
 				</section>
 
-				<section>
+				<section><!-- Introduction/ What Is Version Control -->
 				
 					<section>
 						<h2>What is version control?</h2>
@@ -119,7 +119,7 @@
 				
 				</section>
 				
-				<section>
+				<section><!-- Installation and Command Line -->
 				
 					<section>
 						<h2>Getting Started with Git</h2>
@@ -128,271 +128,259 @@
 					</section>
 					
 					<section>
-						<h2>Download Git</h2>
+						<h2><a href="http://www.git-scm.com/downloads">Download Git</a></h2>
 						
-						<p><a href="http://www.git-scm.com/downloads">Download Git from the Git website.</a></p> 
+						<p><br><a href="http://www.git-scm.com/downloads">http://www.git-scm.com/downloads</a></p> 
 						
-						<p>Choose your appropriate installation for your computer.</p>		
+						<p><br>Choose the appropriate installation for your computer.</p>		
 					</section>
-
-					
+	
 					<section>
+						<h2>The Trusty Command Line</h2>
+							
+						<p>The command line is a friendly <em>(?)</em><br> and useful tool for a developer.</p>
+							
+						<p>But for many it's a bit <em>(?)</em> scary.</p>
+							
+						<p><br>Using Git on the command line in the long-term will be easier for you.</p>
+							
+						<p><br>Some of its names: Git Shell/ Git Bash/ Command Line</p>
+					</section>
+						
+					<section>
+						<p>Don't worry, my coding happy friend. Let's introduce some command line concepts that will be of help.</p>
+						
+						<img src="mopsies/mopsiearms.png" width="30%" />
+					</section>
+
+					<section>
+						<h2>Useful Commands</h2>
+								
+						<pre><code>cd</code></pre>
+						<p><strong>Change directory</strong> - useful for moving from folder to folder.</p>
+								
+						<br><pre><code>ls</code></pre> 
+						<p><strong>List</strong> - this command lets you see the contents of a folder.</p>
+								
+						<br><pre><code>mkdir</code></pre>
+						<p>This <strong>makes a directory</strong> (new folder).</p>		
+					</section>
+					
 						<section>
-							<h2>The Trusty Command Line</h2>
+							<h2>How to leap across your files</h2>
 							
-							<p>The command line is a friendly <em>(?)</em> and useful tool for a developer.</p>
-							
-							<p>But for many it's a bit <em>(?)</em> scary. (Maybe more than a bit.)</p>
-							
-							<p>Using Git on the command line long-term will be easier for you.</p>
-							
-							<p>Git Shell/ Git Bash/ Command Line</p>
+							<img src="images/tombraider/trlegendscreen5.jpg" width="40%" />
+							<p>Image Source: <a href="http://www.tombraiderchronicles.com/tr7/">Tomb Raider Chronicles</a>, PS</p>
 						</section>
 						
 						<section>
-							<p>Don't worry my coding happy friend. Let's introduce some command line concepts that will be of help.</p>
-							
+							<pre><code data-trim>
+							// user
+							ls
+							</code></pre>
+							<p>Find out where you are.</p>
 						</section>
-
+						
 						<section>
-								<h2>Useful Commands</h2>
-								
-								<br><pre><code>cd</code></pre>
-								<p><strong>Change directory</strong> - useful for moving from folder to folder.</p>
-								
-								<br><pre><code>ls</code></pre> 
-								<p><strong>List</strong> - this command lets you see the contents of a folder.</p>
-								
-								<br><pre><code>mkdir</code></pre>
-								<p>This <strong>makes a directory</strong> (new folder).</p>		
+							<pre><code data-trim>
+							// user
+							cd Documents
+							</code></pre>
+							<p>Move to your Documents folder.</p>
+							
+							<pre><code data-trim>
+							// user/Documents
+							cd Folder/SubFolder
+							</code></pre>
+							<p>Jump multiple folders at once.</p>
 						</section>
 					
 						<section>
-							<section>
-								<h2>How to leap across your files</h2>
-							</section>
+							<pre><code data-trim>
+							// user/Documents/Folder/SubFolder
+							cd ..
+							</code></pre>
+							<p>Takes you up one level up/ one level out.</p>
 							
-							<section>
-								<pre><code>
-								user
-								ls
-								</code></pre>
-								<p>Find out where you are.</p>
-							</section>
-							
-							<section>
-								<pre><code>
-								user
-								cd Documents
-								</code></pre>
-								<p>Move to your Documents folder.</p>
-								
-								<pre><code>
-								user/Documents
-								cd Folder/SubFolder
-								</code></pre>
-								<p>Jump multiple folders at once.</p>
-							</section>
+							<pre><code data-trim>
+							// user/Folder1/SubFolder1
+							</code></pre>
+						</section>
 						
-							<section>
-								<pre><code>
-								user/Documents/Folder/SubFolder
-								cd ..
-								</code></pre>
-								<p>Takes you up one level up/ one level out.</p>
-								
-								<pre><code>
-								user/Folder1/SubFolder1
-								</code></pre>
-							</section>
-							
-							<section>
-								<pre><code>cd ~</code></pre>
-								<p>Take me back to root (likely your username's main folder).</p>
-							</section>
-							
-							<section>
-								<p>
-								You are here
-								Your command
-								Now you are here
-								</p>
-							</section>
-						</section>	
-					</section>
-							
-
-				
-				<section>
+						<section>
+							<pre><code>cd ~</code></pre>
+							<p>Take me back to root (likely your username's main folder).</p>
+						</section>
+						
+						<section>
+							<p>
+							You are here
+							Your command
+							Now you are here
+							</p>
+						</section>
+	
+					<section>
 						<h2>Tool Alternatives: GUIs</h2>
-						
-						
+							
 						<p>If you aren't comfortable with the command line, there are great tools to help you get started using Git.</p>
-						
+					
 						<p>Here are a few GUIs (graphical user interfaces) to get you started:</p>
-						
+			
 						<ul>
 							<li><a href="http://www.git-scm.com/downloads/guis">List of Git recommended clients</a></li>
 							<li>Popular: GitHub: <a href="https://windows.github.com/">Windows</a>, <a href="https://mac.github.com/">Mac</a></li>
 							<li>Popular: <a href="http://www.sourcetreeapp.com/">Atlassian SourceTree</a></li>
 						</ul>
-						
+					</section>
+					
+					<section>
 						<p>Using these tools will help you understand how Git works and its main commands. Learning how Git works will allow you to apply it to the command line in the future.</p>
 						
-						<p>(Same language, different tools.)</p>			
-						
-						<aside class="notes">
-							<p>This is actually how I first started using Git. I went to a talk about Git and sat there quite confused. A year later, using the GitHub app helped me better understand how version control works. I eventually started using the command line for better control</p>
-							
-							<p>Though this guide will not discuss how to use these tool, understanding the Git commands and how version control works should be helpful in getting you up to speed with the apps if you choose to use them.</p>	
-						</aside>		
-
-				</section>
-				
-				<section>
-						<h2>What Do I Need<br>to Get Started?</h2>
-				</section>
-				
-				<section>
-				
-					<h2></h2>
-					<p>http://www.git-scm.com/downloads</p>
-				
-				</section>
-				
-				<section>
-						<h1>Git:<br>Useful Features</h1>
-				</section>
-				
-				<section>
-						<h1>Setup</h1>
-						<code>git config</code>
-		
-						<p>Before you make your first commit (we'll get there), you will need to let Git know who you are. This is a bit like your fingerprint.</p>
-						
-						<pre><code>
-							git config --global user.name "Mopsie Pie"
-							git config --global user.email "piemopsie@mopsiepie.co"
-						</pre></code>
-						
-						<p>Note: <code>--global</code> applies to all projects. If you want to create settings just for one project, don't include <code>--global.</code>
-						</p>
-				</section>
-				
-				<section>
-						<h1>Init</h1>
-						<code>git init</code>
-		
-						<p>Initializes a new Git project</p>
-						
-						<p>This is you saying:</p>
-						<blockquote>"Hey Git, I want you to keep track of my files in this folder."</blockquote>
-						
-						<aside class="notes">Or it helps to do some helpful clearing out on an old one.</aside>
-				</section>
-				
-				<section>
-						<h1>Status</h1>
-						<code>git status</code>
-		
-						<p>This command asks Git what is currently happening with your files/repository.</p>
-						
-						<p>It tells you what files are new, modified, and lets you know which branch you are currently working on.</p>
-						
-						<p>Note: <code>--global</code> applies to all projects. If you want to create settings just for one project, don't include <code>--global.</code></p>
-
-				</section>
-				
-				<section>
-						<h1>Commit</h1>
-						<code>git commit</code>
-		
-						<p>Before you make a commit (we'll get there), you will need to let Git know who you are. This is a bit like your fingerprint.</p>
-						
-						<pre><code>
-						git commit -m "This is the change I made."
-						</pre></code>
-						
-						<p>Note: <code>--global</code> applies to all projects. If you want to create settings just for one project, don't include <code>--global.</code></p>
-						
-						<p>Don't do these things: <a href="http://www.whatthecommit.com/">bad commit messages</a>. But do enjoy the humor.</p>
-						<p><a href="http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html">A good guide</a></p>
-
-				</section>
-				
-				<section>
-						<h1>Log</h1>
-						<code>git log</code>
-		
-						<p>Use up down to navigate.</p>
-						<p>Press <code>q</code> to exit.</p>
-				</section>
-				
-				<section>
-						<h1>Branches</h1>
-						<code>git branch</code>
+						<p><br>Same language, different tools.</p>			
+					</section>
 					
-						<pre><code data-trim contenteditable>
-						git log
-						</code></pre>
+					<section>
+						<aside>
+							<p>Using a GUI was how I first started using Git. I went to a talk about Git and sat there quite confused. A year later, using the GitHub app helped me better understand how version control works. I eventually started using the command line for better control.</p>
+							
+							<p>Though this guide will not discuss how to use these tools, understanding the Git commands and how version control works should be helpful in getting you up to speed with the apps if you choose to use them.</p>	
+						</aside>
+					</section>
+					
+					<section>
+						<p>Now that you know how to get started and have some command line tools under your belt, let's dive into using Git.</p>
 						
-						<aside>Imagine you are working on a project. Maybe you are building a site or application. Maybe you are designing a new logo.
+						<img src="images/tombraider/trlegendscreen2.jpg" />
+						<p>Image Source: <a href="http://www.tombraiderchronicles.com/tr7/">Tomb Raider Chronicles</a></p>
 				</section>
+			</section>
 				
 				<section>
-					<p>Making a new change? Thinking of trying a new approach?</p>
-					<p>Make a new branch first. <br>Think of it as a savepoint before you head down a new path.</p>
-					<img src="images/tombraider/trlastrevscreen046.jpg" />
-				</section>
-				
-				<section>
-						<h1>Branches</h1>
-						<code>git branch</code>
-						<p>The great things about version control is being able to </p>
-						
-						<p>Imagine you are working on a project. You reach a point where you need to work on a new feature or idea, but you want don't want to impact where you currently are at with your files.</p>
-						
-						<p>A branch takes a snapshot of your files at a specific point and splits those new files off. You are free to morph those files as you like.</p>
-						
-						<section>
-							<pre><code data-trim>
-							git branch awesome-new-feature
-							</code></pre>
+					<section>
+							<h1>Git:<br>Useful Features</h1>
+					</section>
+					
+					<section>
+							<h1>Setup</h1>
+							<code>git config</code>
+			
+							<p>Before you make your first commit (we'll get there), you will need to let Git know who you are. This is a bit like your fingerprint.</p>
 							
 							<pre><code data-trim>
-							git checkout -b newbranchofjoy
+								git config --global user.name "Mopsie Pie"
+								git config --global user.email "piemopsie@mopsiepie.co"
+							</pre></code>
+							
+							<p>Note: <code>--global</code> applies to all projects. If you want to create settings just for one project, don't include <code>--global.</code>
+							</p>
+					</section>
+					
+					<section>
+							<h1>Init</h1>
+							<code>git init</code>
+			
+							<p>Initializes a new Git project</p>
+							
+							<p>This is you saying:</p>
+							<blockquote>"Hey Git, I want you to keep track of my files in this folder."</blockquote>
+					</section>
+					
+					<section>
+							<h1>Status</h1>
+							<code>git status</code>
+			
+							<p><br>This command asks Git what is currently happening with your files/repository.</p>
+							
+							<p><br>It tells you what files are new or modified. With <code>git status</code> you know which branch you are currently working on.</p>
+							
+							<p><strong><br>Use often. Use frequently.</strong></p>
+					</section>
+					
+					<section>
+							<h3>Global</h3>
+							
+							<p><br>Note: <code>--global</code> applies to all projects on your computer account. If you want to create settings just for one project, don't include <code>--global.</code></p>
+					</section>
+					
+					<section>
+							<h1>Commit</h1>
+							<code>git commit</code>
+			
+							<p><br>A commit is a change you record in your Git history.<br>It's a savepoint in your code base.</p>
+							
+							<pre><code data-trim>
+							git commit -m "This is the change I made."
+							</pre></code>
+							
+							<p><strong>Don't do these things:</strong> <a href="http://www.whatthecommit.com/">bad commit messages</a>.<br> (But do enjoy the humor.)</p>
+							<p><br>Here's a <a href="http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html">good guide for commits</a>.</p>
+							
+							<!--<p><code>-m</code> Allows you to add a message.</p>-->
+					</section>
+					
+					<section>
+							<h1>Log</h1>
+							<code>git log</code>
+			
+							<p><br>As you make changes, it will help to know what changes you have made in the past.</p>
+							
+							<p><br>Use up down to navigate through your commit history.</p>
+							<p>Press <code>q</code> to exit.</p>
+					</section>
+					
+					<section>
+							<h3>Help, I'm Stuck!</h3>
+							
+							<p><br>When using command line Git, sometimes you will find yourself entering a new screen where you makes changes or comments.</p>
+							<code>CTRL X</code>
+							
+							<p><br>To exit <code>git log</code>, use Q.</p>
+							
+							<p><br><code>CTRL C</code> is also appropriate for some occasions.</p> 
+					</section>
+					
+					<section>
+							<h1>Branches</h1>
+							<code>git branch</code>
+							
+							<p>Imagine you are working on a project. You reach a point where you need to work on a new feature or idea, but you want don't want to impact where you currently are at with your files.</p>
+							
+							<p>A branch takes a snapshot of your files at a specific point and splits those new files off. You are free to morph those files as you like.</p>
+					</section>
+					
+					<section>
+							<p>Making a new change? Thinking of trying a new approach?</p>
+							<p><strong>Make a new branch first.</strong><p>
+							<p>Think of it as a savepoint before you head down a new path.</p>
+							<img src="images/tombraider/trlastrevscreen046.jpg" width="50%" />
+							<p>Image Credit: <a href="http://www.tombraiderchronicles.com/tr4/screenshots_08.html">Tomb Raider Chronicles</a></p>
+					</section>
+					
+					<section>
+								<pre><code data-trim>
+								git branch awesome-new-feature
+								</code></pre>
+								
+								<pre><code data-trim>
+								git checkout -b newbranchofjoy
+								</code></pre>
+					</section>
+					
+					<section>
+							<h1>Stash</h1>
+							<code>git stash</code>
+							
+							<p>Commits are changes that get recorded into your code base. What if you don't want to make a commit, but just want to save where you are?</p>
+							
+							<p>Like a checkpoint, <code>git stash</code> is useful. It saves your unfinished changes for you to return to later.</p>
+							
+							<p>This is especially useful when switching between branches.</p>
+							
+							<pre><code data-trim>
+							git stash
 							</code></pre>
-						</section>
-				</section>
-				
-				<section>
-						<h1>Stash</h1>
-						<code>git stash</code>
-						
-						Commits are changes that get recorded into your code base. What if you don't want to make a commit, but just want to save where you are? 
-						
-						Like a checkpoint, <code>git stash</code> is useful.
-						
-						<pre><code data-trim contenteditable>
-						git log
-						</code></pre>
-				</section>
-				
-				<section>
-						<h1>Command Line Tools</h1>
-						<code>git stash</code>
-						
-						cd
-						mkdir
-						
-						
-						Commits are changes that get recorded into your code base. What if you don't want to make a commit, but just want to save where you are? 
-						
-						Like a checkpoint, <code>git stash</code> is useful.
-						
-						<pre><code data-trim contenteditable>
-						git log
-						</code></pre>
+					</section>
 				</section>
 				
 				<section>
