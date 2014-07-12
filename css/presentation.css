@@ -1,3 +1,7 @@
 block {
 	display: block;
 }
+
+section.present p {
+	margin: 4%;
+}
