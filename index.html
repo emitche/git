@@ -445,9 +445,10 @@
 					</section>
 					
 					<section>
-						<p>Can you imagine how complicated it might be for a team of people to work on a project together? It would be a tangle.</p>
+						<p>Can you imagine how complicated it might be for a team of people to work on a project together and manually make choices about which files to use? Imagine hundreds or thousands of files. It would be a tangle.</p>
 						
-						<img src="images/cats-tangle-walt-eis.jpg" width="50%" />
+						<img src="images/cats-tangle-walt-eis.jpg" width="40%" />
+						<p>Image Source: <a href="https://www.flickr.com/photos/29477254@N00/170771506/">Walt Eis</a></p>
 					</section>
 					
 					<section>
@@ -460,7 +461,7 @@
 					</section>
 				
 					<section>
-						<p>Collaboration in git involves a remote repository. This remote repository is stored somewhere on a server. Users push (or send over) their changes to this remote repository. And they pull from it to request the most recent changes.</p>
+						<p>Collaboration in Git involves a remote repository. This remote repository is stored somewhere on a server. Users push (or send over) their changes to this remote repository. And they pull from it to request the most recent changes.</p>
 					</section>
 					
 					<section>
@@ -477,20 +478,21 @@
 					</section>
 					
 					<section>
-					
-							<h1>Local and Remote</h1>
+							<h1>Local vs. Remote</h1>
 							
-							<p>The folder on your computer that stores the project you are working on is your local repository (repo). It can have many branches These files and branches are yours to control and no one sees them until you share them.</p>
+							<p>The folder on your computer that stores the project you are working on is your local repository (repo). It can have many branches. These files and branches are yours to control and no one sees them until you share them.</p>
 							
 							<p>The same project might exist on another computer, generally a server, somewhere out in the cloud. Repos out in the cloud are remote repositories. Remote repositories can also have many remote branches.</p>
 							
 							<p>A good workflow with multiple users makes good use of integrating user/local changes into remote branches.</p>
-					
+					</section>
 					<section>
 							<h1>Remote</h1>
 							<code>git remote</code>
 			
-							<p>To find out what remote repositories you project knows about or to add a new remote 
+							<p>To find out what remote repositories you project knows about or to add a new remote, you would use <code>git remote</code>.
+							
+							<p><a href="http://git-scm.com/book/en/Git-Basics-Working-with-Remotes">Git's Walkthrough for Using Remotes</a></p>
 					</section>
 					
 					<section>
@@ -498,15 +500,19 @@
 							<code>git pull</code>
 							
 							<p>A common way to get files from a remote branch is to use pull. This allows you to update the files on your own computer, pulling in the changes that have been made to the remote branch or repo.</p>
+							
+							<p>If several people are working on a project, you can pull in the new changes and work from the most recent branch of a project.</p>
 					</section>
 					
 					<section>
 							<h1>Push</h1>
 							<code>git push</code>
 							
-							<p>The opposite of a pull is push. When you are ready to integrate your changes to a remote repository, it's time to use push to get them there.</p>
+							<p>The opposite of a pull is push. When you are ready to integrate your changes with a remote repository, it's time to push them there.</p>
 							
-							<pre><code>git push origin branch-you-are-pushing</code></pre>
+							<pre><code>git push [remote-repo] [branch-you-are-pushing-to]</code></pre>
+							
+							<pre><code>git push origin master</code></pre>
 					</section>
 				</section>
 				
@@ -514,20 +520,15 @@
 				
 				<h1>Resources</h1>
 				
-					<h2>Documentation</h2>
+					<br><h2>Documentation</h2>
 					
-					<p>Git's Main Site: <a href="http://www.git-scm.com/">http://www.git-scm.com/</a></p>
-					
-					<p>Git Documentation: <a href="http://git-scm.com/doc">http://git-scm.com/doc</a></p>
-					
-					<p>GitHub Help: <a href="https://github.com/">https://help.github.com/</a></p>
-					
+					<p>Git's Main Site: <a href="http://www.git-scm.com/">http://www.git-scm.com/</a>
+					<br>Git Documentation: <a href="http://git-scm.com/doc">http://git-scm.com/doc</a>
+					<br>GitHub Help: <a href="https://github.com/">https://help.github.com/</a></p>
 					
 					<h2>Tutorials</h2>
-				
-					<p>Git Immersion: <a href="http://gitimmersion.com/">http://gitimmersion.com/</a></p>
-					
-					<p>Try Git: <a href="https://try.github.io/">https://try.github.io/</a></p>
+					<p>Git Immersion: <a href="http://gitimmersion.com/">http://gitimmersion.com/</a>
+					<br>Try Git: <a href="https://try.github.io/">https://try.github.io/</a></p>
 							
 				</section>
 			</div>
