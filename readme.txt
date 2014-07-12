@@ -1,0 +1,1 @@
+This is a brief introduction to the importance of version control. It covers some basic commands for navigating the command line. It covers Git basics and offers some resources for continuing to learn Git.
